@@ -2,6 +2,6 @@ local player = game:GetService("Players").LocalPlayer
 local mouse = player:GetMouse()
 game:GetService("RunService").RenderStepped:Connect(function()
 			if mouse.Target.Parent:FindFirstChild("Humanoid") and mouse.Target.Parent.Name ~= player.Name then
-				wait (0.9)mouse1press(0.9) wait() mouse1release()
+				wait (0.5)mouse1press() wait(0.9) mouse1release()
 			end
 end)
